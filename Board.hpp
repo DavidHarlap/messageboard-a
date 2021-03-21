@@ -1,5 +1,7 @@
  #include <vector>
  #include<iostream>
+ #include "Direction.hpp"
+
 
  using namespace std;
  
@@ -7,6 +9,8 @@
     class Board{
         private:
             vector<vector<char>> board;
+            unsigned int rownum;
+            unsigned int colnum;
         public:
             void post(unsigned int row,unsigned int column,ariel::Direction dir,string str);
             string read(unsigned int row,unsigned int column,ariel::Direction dir,unsigned int length);

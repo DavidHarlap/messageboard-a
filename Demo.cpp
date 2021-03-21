@@ -6,7 +6,7 @@
  */
 
 #include "Board.hpp"
-#include "Direction.hpp"
+//#include "Direction.hpp"
 using ariel::Direction;
 
 #include <iostream>
