@@ -9,8 +9,8 @@
     class Board{
         private:
             vector<vector<char>> board;
-            unsigned int rownum;
-            unsigned int colnum;
+            unsigned int rownum=0;
+            unsigned int colnum=0;
         public:
             void post(unsigned int row,unsigned int column,ariel::Direction dir,string str);
             string read(unsigned int row,unsigned int column,ariel::Direction dir,unsigned int length);
@@ -22,6 +22,9 @@
                     }
                     cout<< endl;
                 }
-            }           
+            }
+            unsigned int get_rownum() {return rownum;}
+            unsigned int get_colnum() {return colnum;}
+
     };
  }
